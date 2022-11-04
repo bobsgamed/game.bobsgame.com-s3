@@ -1,0 +1,701 @@
+/*
+tag is tag <div>
+.class is class="class" can be stacked .huge.balls
+#id is <div id="id" must be unique per page.
+*/
+
+/*====================================================
+FONT
+====================================================*/
+
+
+@font-face
+{
+	font-family: 'bobsgame';
+	src:	url('bobsgame.eot?#iefix') format('embedded-opentype'), 
+			url('bobsgame.eot') format('embedded-opentype'), 
+			url('bobsgame.woff') format('woff'), 
+			url('bobsgame.ttf')  format('truetype');
+}
+	
+/*====================================================
+HTML ELEMENTS
+====================================================*/
+html, body 
+{
+	width:100%;
+	height:100%;
+	margin:auto;
+	padding:0;
+}
+
+body
+{
+	font-family: bobsgame, Tahoma, Geneva, sans-serif;
+	font-size: 8px;
+	text-align: center;
+	margin:auto;
+
+	color: #fff;
+	background-color:#000;
+	/*text-shadow:#aaa 0px 0px 1px;*/
+}
+
+
+/*====================================================
+TEXT STYLES
+====================================================*/
+
+.bg
+{
+	color:#0f0;
+	text-shadow:#0f0 0px 0px 8px,#0f0 0px 0px 8px;
+}
+
+.bbg
+{
+	color:#0f0;
+	text-shadow:#0f0 0px 0px 1px,#000 0px 0px 3px,#000 0px 0px 2px;
+
+}
+
+.yuu
+{
+	color:#8500ff;
+	text-shadow:#8500ff 0px 0px 8px,#8500ff 0px 0px 8px,#8500ff 0px 0px 4px;
+}
+
+.byuu
+{
+	color:#8500ff;
+	text-shadow:#000 0px 0px 4px,#8500ff 0px 0px 1px,#8500ff 0px 0px 2px;
+
+
+}
+
+.star 
+{
+	font-size: 14px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-weight: bold;
+	color:#bbb; text-shadow:0px 0px 1px #ddd;
+}
+
+.font_11 
+{
+	font-size: 11px;
+	text-align: center;
+}
+
+.font_green_36 
+{
+
+	font-size: 36px;
+	color: #0F0;
+}
+
+.font_purple_36 
+{
+
+	font-size: 36px;
+	color: #309;
+}
+
+.font_gray_6 
+{
+	color: #333;
+	font-size: 7px;
+	font-family: "Lucida Console", Monaco, monospace;
+}
+
+.font_gray_9 
+{
+	color: #555;
+	font-size: 9px;
+
+}
+
+.font_gray_10 
+{
+	color: #777;
+	font-size: 11px;
+
+}
+
+.font_16 
+{
+	font-size: 16px;
+}
+
+.font_9 
+{
+
+	font-size: 9px;
+}
+
+.font_purple_16 
+{
+	font-size: 16px;
+	color: #309;
+}
+
+.font_72 
+{
+	font-size: 72px;
+}
+
+.font_red_36 
+{
+	color: #F00;
+	font-size: 36px;
+}
+
+.font_green_16 
+{
+	color: #0F0;
+	font-size: 16px;
+}
+.font_green_11 
+{	
+	color: #0F0;
+	font-size: 11px;
+}
+.font_purple_11 
+{	
+	color: #309;
+	font-size: 11px;
+}
+.font_white_11 
+{	
+	color: #FFF;
+	font-size: 11px;
+}
+.font_white_36 
+{
+	font-size: 36px;
+	font-weight: bold;
+}
+
+.size_9_lightgray 
+{
+	color: #CCC;
+	font-size: 9px;
+}
+
+
+/*====================================================
+LINKS
+====================================================*/
+
+a:link 
+{
+	color: #8500ff;
+	text-shadow:#309 0px 0px 1px;
+}
+
+a:visited 
+{
+	color: #6030B0;
+	text-shadow:#000 1px 1px 2px;
+}
+
+a:hover 
+{
+	color: #8500ff;
+	text-decoration: underline;
+	text-shadow:#00ff00 0px 0px 5px;
+}
+
+
+/*====================================================
+MAIN BODY CONTENT
+====================================================*/
+
+
+#body_table
+{
+	width:100%;
+	border:0;
+	margin:auto;
+	padding:0;
+}
+
+#right_sidebar
+{
+	padding: 10px;
+	width:200px;
+	border-left:1px dotted #333;
+}
+
+#left_sidebar
+{
+	padding:10px;
+	border-right:1px dotted #333;
+	width:380px;
+}
+#left_sidebar_index
+{
+	float:right; 
+	padding:35px;
+}
+
+#middle_column
+{
+	padding: 10px;
+}
+
+
+
+#mainbody
+{
+	font-size: 8px;
+	text-align: center;
+	overflow:auto;
+	
+	background-color: #000;
+	color: #fff;
+	/*text-shadow:#aaa 1px 1px 1px;*/
+
+}
+
+
+
+
+/*====================================================
+HEADER AND FOOTER
+====================================================*/
+
+.n
+{
+	color:#0f0;
+	text-shadow:#0b0 1px 1px 1px;
+}
+
+.D
+{
+	color:#8500ff;
+	text-shadow:#40b 1px 1px 1px;
+}
+
+#h
+{
+	text-align: center;
+	border-left:none;
+	border-right:none;
+	margin:0;
+	border:0;
+	padding:0;
+	
+	background-color:#000;
+	
+}
+
+#f
+{
+	text-shadow:none;
+	text-align: center;
+	clear:both;
+	padding: 5px;
+	
+	background-color:#000;
+	
+	
+}
+
+#ndcopyright , #copyright
+{
+	text-shadow:none;
+	text-align:center;
+	font-size:8px;
+	color:#222;
+	
+	text-shadow:#888 1px 1px 1px,#888 1px 1px 1px;
+}
+
+#selected_theme_text
+{
+	text-align:center;
+	font-size:8px;
+	color:#777;
+	margin-left:-10px;
+}
+
+
+
+#nDuserpanel
+{
+	font-size:8px;
+	/*font-family:Tahoma, Geneva, sans-serif;*/
+
+}
+
+#nDlogin
+{
+	margin:0;
+	padding:0;
+	text-align:right;
+	color:#0f0;
+}
+
+#nDlogin_username
+{
+font-weight:bold;
+color:#000;
+text-shadow:#00ff00 0px 0px 5px;
+}
+
+
+.headerbuttons {
+	text-align:center;
+}
+
+.headersmallbuttons {
+	text-align:center;
+}
+
+.headertinybuttons {
+	text-align:center;
+}
+
+.headerbutton {
+	width:232px;
+	height:73px;
+	display:inline-block;
+	background:top left no-repeat transparent none;
+}
+
+.headersmallbutton {
+	width:116px;
+	height:36px;
+	display:inline-block;
+	background:top left no-repeat transparent none;
+}
+
+.headertinybutton {
+	width:100px;
+	height:47px;
+	display:inline-block;
+	background:top left no-repeat transparent none;
+}
+
+
+.headerbutton:hover {
+	background-position:0 -73px;
+}
+
+
+#body-home #smallbutton-home, 
+#body-faq #smallbutton-faq, 
+#body-forum #smallbutton-forum, 
+.headersmallbutton:hover {
+	background-position:0 -36px;
+}
+
+
+#smallbutton-home {background-image:url('/buttons/small/home.png');}
+#smallbutton-faq {background-image:url('/buttons/small/faq.png');}
+#smallbutton-forum {background-image:url('/buttons/small/forum.png');}
+
+
+#button-viral {background-image:url('/buttons/viral.png');}
+#button-download {background-image:url('/buttons/download.png');}
+
+
+#button-nd {background-image:url('/buttons/nD.png');}
+
+
+
+
+
+
+
+
+
+.payWithAmazonButton
+{
+	width:310px;
+	height:66px;
+	display:inline-block;
+	background:top left no-repeat transparent url('/images/payWithAmazon.png');/* fix IE, doesnt know background-image */
+	
+	
+	padding: 0px;
+	border-radius: 0px;
+	border: 0px solid transparent;
+	border-color:transparent;
+	color: transparent;
+	text-shadow: none;
+	text-decoration: none;
+	
+	outline: none;/*fix chrome outline for no img src*/
+	font-size:0px;/*fix chrome wont hide text*/
+	filter: none;/* fix IE ugly gray gradient rectangle*/
+	
+	width:0px;/*fix chrome outline for no img src*/
+	height:0px;
+	padding-right:310px;
+	padding-bottom:66px;
+	
+	
+}
+
+.payWithPaypalButton
+{
+	width:306px;
+	height:66px;
+	display:inline-block;
+	background:top left no-repeat transparent url('/images/payWithPaypal.png');/* fix IE, doesnt know background-image */
+	
+	padding: 0px;
+	border-radius: 0px;
+	border: 0px dotted transparent;
+	border-color:transparent;
+	color: transparent;
+	text-shadow: none;
+	text-decoration: none;
+	
+	outline: none;/*fix chrome outline for no img src*/
+	font-size:0px;/*fix chrome wont hide text*/
+	filter: none;/* fix IE ugly gray gradient rectangle*/
+	
+	width:0px;/*fix chrome outline for no img src*/
+	height:0px;
+	padding-right:306px;
+	padding-bottom:66px;
+}
+
+.payWithGoogleButton
+{
+	width:314px;
+	height:66px;
+	display:inline-block;
+	background:top left no-repeat transparent url('/images/payWithGoogle.png');/* fix IE, doesnt know background-image */
+
+	
+	padding: 0px;
+	border-radius: 0px;
+	border: 0px dotted transparent;
+	border-color:transparent;
+	color: transparent;
+	text-shadow: none;
+	text-decoration: none;
+	
+	outline: none;/*fix chrome outline for no img src*/
+	font-size:0px;/*fix chrome wont hide text*/
+	filter: none;/* fix IE ugly gray gradient rectangle*/
+	
+	width:0px;/*fix chrome outline for no img src*/
+	height:0px;
+	padding-right:314px;
+	padding-bottom:66px;
+}
+
+
+.payWithAmazonButton:hover{background-position:0 -66px;}
+.payWithPaypalButton:hover{background-position:0 -66px;}
+.payWithGoogleButton:hover{background-position:0 -66px;}
+
+
+
+
+/*====================================================
+buttons, text boxes, etc
+====================================================*/
+input
+{
+	padding:2px;
+	background:#222;
+
+	border-radius:8px; 
+	border:1px solid; 
+	border-color: #009900 #00CC00 #CC00FF #9900FF; 
+
+	color:#fff;
+	text-shadow:#999 1px 1px 1px;
+
+	background:#222;
+
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#000000'); /* for IE */
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#000)); /* for webkit browsers */
+    background: -moz-linear-gradient(top,  #fff,  #000); /* for firefox 3.6+ */ 
+}
+
+select
+{
+	padding:2px;
+	background:#222;
+
+	border-radius:8px; 
+	border:1px solid; 
+	border-color: #009900 #00CC00 #CC00FF #9900FF; 
+
+	color:#ddd;
+	text-shadow:#222 1px 1px 1px;
+
+	background:#222;
+
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#777777'); /* for IE */
+    background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#777)); /* for webkit browsers */
+    background: -moz-linear-gradient(top,  #000,  #777); /* for firefox 3.6+ */ 
+}
+
+textarea
+{
+	background:#111;
+	color:#fff;
+
+	background:#222;
+
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#222222'); /* for IE */
+    background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#222)); /* for webkit browsers */
+    background: -moz-linear-gradient(top,  #000,  #222); /* for firefox 3.6+ */ 
+}
+
+
+.faq_box
+{
+	background:#eee;
+	color:#000;
+	text-align:left;
+	text-shadow:#777 1px 0px 1px;
+	padding:8px;
+
+}
+
+.faq_questions_title
+{
+	text-decoration: underline;
+	font-size:16px;
+
+}
+
+.faq_question
+{
+	font-weight: bold;
+
+}
+
+.faq_answer
+{
+
+
+}
+
+.faq_q
+{
+	font-weight: bold;
+	
+}
+
+.faq_a
+{
+	font-weight: bold;
+
+}
+
+
+.cbb
+{
+	text-align:left;
+	border-radius:8px; 
+	border:1px solid; 
+	border-color: #00ff00 #00ff00 #000000 #000000;  
+
+	padding:4px;
+	padding-top:8px;
+	padding-bottom:8px;
+	
+	width:100%;
+	font-size:16px;
+	
+
+}
+.uncheckedCBB
+{
+	text-align:center;
+	border-radius:8px; 
+	border:1px solid; 
+	border-color: #000000 #000000 #000000 #000000; 
+
+	padding:4px;
+	padding-top:10px;
+	padding-bottom:10px;
+	
+	width:100%;
+	font-size:16px;
+	
+	background:#fff;
+
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#CCCCCC'); /* for IE */
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#CCC)); /* for webkit browsers */
+    background: -moz-linear-gradient(top,  #FFF,  #CCC); /* for firefox 3.6+ */ 
+
+}
+
+.checkedCBB
+{
+	text-align:center;
+	border-radius:8px; 
+	border:1px solid; 
+	border-color: #000000 #000000 #000000 #000000; 
+
+	padding:4px;
+	padding-top:10px;
+	padding-bottom:10px;
+	
+	width:100%;
+	font-size:16px;
+	
+	background:#0F0;
+
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#00FF00'); /* for IE */
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#0F0)); /* for webkit browsers */
+    background: -moz-linear-gradient(top,  #FFF,  #0F0); /* for firefox 3.6+ */ 
+	
+	
+}
+
+
+.pictureButton
+{
+	text-align:center;
+	
+	border-radius:32px; 
+	border:2px solid; 
+	border-color: #000000 #000000 #000000 #000000;  
+
+	
+	padding-top:8px;
+	padding-bottom:8px;
+	
+	font-size:16px;
+	margin:auto;
+	
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#BBBBBB'); /* for IE */
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#BBB)); /* for webkit browsers */
+    background: -moz-linear-gradient(top,  #FFF,  #BBB); /* for firefox 3.6+ */ 
+	
+	text-shadow:#fff 1px 1px 1px, #000 1px 1px 2px;
+}
+
+
+.roundedWhitePanel
+{
+
+	padding:2px;
+	
+
+	border-radius:16px; 
+	border:1px solid; 
+	border-color: #009900 #00CC00 #CC00FF #9900FF; 
+
+	color:#000;
+	text-shadow:#999 1px 1px 1px;
+
+	background:#fff;
+
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#eeeeee'); /* for IE */
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee)); /* for webkit browsers */
+    background: -moz-linear-gradient(top,  #fff,  #eee); /* for firefox 3.6+ */ 
+}
+
